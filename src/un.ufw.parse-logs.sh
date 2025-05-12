@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Script path setup
+# BOILERPLATE
 SCRIPT_PATH=$(readlink -f "${BASH_SOURCE}")
 SCRIPT_DIR=$(dirname -- "$SCRIPT_PATH")
 SCRIPT_BASENAME=$(basename -- "$SCRIPT_PATH" .sh)
-# Constants
+
 ESC=$'\e'
 BOLD="${ESC}[1m"
 RESET="${ESC}[0m"
@@ -17,6 +17,7 @@ UNDERLINE="${ESC}[4m"
 source "${SCRIPT_DIR}/lib/isValidIP.sh"
 source "${SCRIPT_DIR}/lib/isPrivateIP.sh"
 
+# CONSTANTS
 declare -A CONFIG=(
   [logLvl]=1
   [mailTo]="strato-report@freenet.de" # not used
