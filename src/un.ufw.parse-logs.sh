@@ -46,7 +46,7 @@ declare -A OUT_PORTS_MAP
 declare -A IN_PORTS_MAP
 declare -A PRE_FILTER_IPS
 
-function parseArguments() {
+function parseArgs() {
 
   #local args="${@}"
 
@@ -591,7 +591,7 @@ function main() {
   local -n alienSrcIPsMap=ALIEN_SRC_IPS_MAP
   local -n alienDstIPsMap=ALIEN_DST_IPS_MAP
 
-  parseArguments "${@}"
+  parseArgs "${@}"
   initPreFilterIPs
   parseLogs
 
