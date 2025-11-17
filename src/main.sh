@@ -199,14 +199,14 @@ function parseLogs() {
 	# - outPortsMap
 	# - IN_LOGS
 	# - OUT_LOGS
-  local -n inPortsMap=IN_PORTS_MAP
-  local -n outPortsMap=OUT_PORTS_MAP
+	local -n inPortsMap=IN_PORTS_MAP
+	local -n outPortsMap=OUT_PORTS_MAP
 	local -n timeSpan=TIME_SPAN
 	local -n preFilterIPs=PRE_FILTER_IPS
-  local -n outLogs=OUT_LOGS
-  local -n inLogs=IN_LOGS
-  local -n alienSrcIPsMap=ALIEN_SRC_IPS_MAP
-  local -n alienDstIPsMap=ALIEN_DST_IPS_MAP
+	local -n outLogs=OUT_LOGS
+	local -n inLogs=IN_LOGS
+	local -n alienSrcIPsMap=ALIEN_SRC_IPS_MAP
+	local -n alienDstIPsMap=ALIEN_DST_IPS_MAP
 
 	#echo "Parsing logs with timeSpan=${timeSpan} preFilterIPs=${preFilterIPs[@]}"
 
@@ -285,11 +285,11 @@ function printMatchLogs() {
 	local logLvl=1
 	local printedHeader=0
 	local report=""
-  local filteredByIP
-  local filteredByPort
-  local src
-  local dst
-  local dpt
+	local filteredByIP
+	local filteredByPort
+	local src
+	local dst
+	local dpt
 
 	# log
 	if [[ ${logLvl} -gt 0 ]]; then
